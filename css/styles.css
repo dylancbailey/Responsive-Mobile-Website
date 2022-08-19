@@ -37,7 +37,7 @@ nav h1 {
 }
 
 section p {
-    width: 60%;
+    width: 75%;
     text-align: center;
     margin: auto;
 }
@@ -87,7 +87,7 @@ section p {
 }
 
 .col p {
-    width: 60%;
+    width: 75%;
     text-align: center;
     margin: auto;
     margin-bottom: 3.5rem;
@@ -112,6 +112,11 @@ img {
     text-transform: uppercase;
 }
 
+.contact p {
+    width: 80%;
+    margin: 2rem 0;
+}
+
 .contact span {
     font-weight: bold;
 }
@@ -128,12 +133,26 @@ footer {
     align-self: center;
 }
 
-.top {
+footer h2 {
     font-size: 1.1rem;
+}
+
+.top {
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .full {
     display: none;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1024px) {
+    
 }
