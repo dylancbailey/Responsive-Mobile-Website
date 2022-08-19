@@ -24,12 +24,18 @@ a {
     color: #4a4a4a;
 }
 
+.container-header,
+.contact h2 {
+    font-size: 1rem;
+}
+
 /* Nav Styling */
 
 .nav-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
 }
 
 nav h1 {
@@ -147,8 +153,8 @@ footer {
     border-top: 1px solid #4a4a4a;
 }
 
-.footer-nav {
-    align-self: center;
+.footer-nav li {
+    text-align: right;
 }
 
 footer h2 {
@@ -161,6 +167,7 @@ footer h2 {
     font-weight: bold;
     text-transform: uppercase;
 }
+
 
 .full {
     display: none;
@@ -236,6 +243,12 @@ footer h2 {
 
     .contact p {
         width: 45%;
+    }
+
+    .footer-nav {
+        width: 15rem;
+        display: flex;
+        justify-content: space-between;
     }
 
     footer h2 {
