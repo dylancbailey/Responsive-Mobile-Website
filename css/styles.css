@@ -10,6 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     letter-spacing: .05em;
+    line-height: 1.6em;
     color: #4a4a4a;
 }
 
@@ -34,6 +35,7 @@ a {
 nav h1 {
     text-align: center;
     font-weight: 800;
+    margin-top: 1.5rem;
 }
 
 section p {
@@ -42,7 +44,12 @@ section p {
     margin: auto;
 }
 
-.nav-wrapper li {
+.top-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-nav li {
     text-align: center;
     background-color: white;
     margin: 5px 0;
@@ -71,6 +78,7 @@ section p {
     flex-direction: column;
     background-color: white;
     align-items: center;
+    margin: auto;
 }
 
 .container-header {
@@ -88,13 +96,15 @@ section p {
 
 .col p {
     width: 75%;
+    font-size: 1rem;
     text-align: center;
     margin: auto;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
 }
 
 img {
     width: 90vw;
+    max-width: 100%;
     margin-bottom: 2rem;
 }
 
@@ -137,7 +147,7 @@ footer h2 {
     font-size: 1.1rem;
 }
 
-.top {
+.top, .full {
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -150,7 +160,88 @@ footer h2 {
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
-    
+    /* Nav */
+    .nav-wrapper {
+        width: 100%;
+        margin: auto;
+    }
+    .top-nav {
+        display: flex;
+        flex-direction: row;
+    }
+    .top-nav li {
+        background-color: #fafafa;
+        width: 15vw;
+    }
+    .nav-wrapper section {
+        display: flex;
+        padding: 0 2rem;
+    }
+    .nav-wrapper img {
+        order: 2;
+        margin-left: 20px;
+    }
+    .nav-wrapper h1 {
+        margin-top: 3.5rem;
+    }
+    .nav-wrapper p {
+        align-self: flex-start;
+        text-align: left;
+        font-size: 1.2rem;
+        margin-top: 0;
+    }
+
+    /* Portfolio */
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container-header {
+        margin: 3rem auto 3rem auto;
+        width: 100%;
+        text-align: center;
+        align-self: flex-start;
+    }
+
+    .col {
+        flex-basis: 50%;
+        height: 30rem;
+        padding: 5px;
+        margin: 0 auto;
+    }
+
+    .col img {
+        width: 100%;
+    }
+
+    .col p {
+        font-size: 0.8rem;
+    }
+
+    /* Footer */
+    .contact p {
+        width: 60%;
+    }
+
+    footer h2 {
+        font-size: 0.7rem;
+        margin: auto 0;
+    }
+
+    .full {
+        display: contents;
+        font-size: 0.7rem;
+    }
+
+    .top {
+        display: none;
+    }
+
+
 }
 
 @media screen and (min-width: 1024px) {
