@@ -32,10 +32,16 @@ a {
 /* Nav Styling */
 
 .nav-wrapper {
+    max-width: 1024px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
 }
 
 nav h1 {
@@ -145,6 +151,7 @@ img {
 }
 
 footer {
+    width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -178,11 +185,9 @@ footer h2 {
 @media screen and (min-width: 768px) {
     /* Nav */
     .nav-wrapper {
-        width: 100%;
         margin: auto;
     }
     .top-nav {
-        display: flex;
         flex-direction: row;
     }
     .top-nav li {
@@ -270,18 +275,24 @@ footer h2 {
 
 @media screen and (min-width: 1024px) {
     /* Nav */
+
+    .nav-wrapper {
+        align-content: space-between;
+    }
+
     nav {
-        width: 1024px;
-        display: flex;
-        margin-top: 2rem;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
         padding: 0 2rem;
     }
     .nav-wrapper h1 {
         margin: auto 0;
+        width: 40%;
         text-align: left;
     }
     .top-nav {
-        margin-left: auto;
+        min-width: 0;
         justify-content: flex-end;
     }
     .top-nav li {
