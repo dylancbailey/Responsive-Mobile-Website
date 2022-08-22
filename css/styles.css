@@ -82,8 +82,9 @@ section p {
     max-width: 1024px;
 }
 
-.nav-wrapper img {
-    width: 50%;
+.profile-image {
+    width: 30%;
+    border-radius: 50%;
 }
 
 
@@ -120,10 +121,36 @@ section p {
 }
 
 img {
-    width: 90vw;
+    width: 90%;
     max-width: 100%;
     margin-bottom: 2rem;
+    transition: 0.5s ease;
 }
+
+/* Music */
+.music-container {
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #4a4a4a;
+}
+
+.music-header {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 4rem 0;
+    text-transform: uppercase;
+}
+
+.music-container img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+
 
 /* Footer Styling */
 
@@ -219,9 +246,7 @@ footer h2 {
     /* Portfolio */
 
     .container {
-        width: 100%;
         padding: 0 20px;
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -246,6 +271,17 @@ footer h2 {
 
     .col p {
         font-size: 0.8rem;
+    }
+
+    /* Music */
+    .music-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .music-container .col {
+        flex-basis: 45%;
+        height: 27rem;
     }
 
     /* Footer */
@@ -313,7 +349,11 @@ footer h2 {
         margin: 0 auto;
     }
 
-
+    /* Music */
+    .music-container .col {
+        flex-basis: 33.33%;
+        height: 22rem;
+    }
 
     /* Footer */
 
