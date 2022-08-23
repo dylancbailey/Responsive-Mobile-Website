@@ -123,6 +123,9 @@ img {
     margin: 4rem 0;
     text-transform: uppercase;
 }
+.music-container img {
+    width: 80%;
+}
 .music-container img:hover {
     transform: scale(1.02);
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
